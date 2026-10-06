@@ -7,8 +7,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pygments-style-solarized-{{ version }}.tar.gz
-  sha256: 4867d8903d8d065c42ed37219eb5e13a6e091f11f1b3cd4f9fab016ec737b97a
+  # removed from PyPI; the upstream repo is archived but keeps the tag
+  url: https://github.com/shkumagai/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 6ed2c8e97a6f085a557c262dab4021f3e0fa4cdb3256ba652402d4bb5bd993de
 
 build:
   number: 1
